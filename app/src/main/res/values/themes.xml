@@ -1,4 +1,4 @@
 <resources>
   <!-- Base application theme. -->
-  <style name="Theme.GitHubApp" parent="@android:style/Theme.Holo" />
+  <style name="Theme.GitHubApp" parent="@style/Theme.AppCompat"/>
 </resources>
