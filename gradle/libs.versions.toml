@@ -8,6 +8,7 @@ androidxAppCompat = "1.6.1"
 compose = "1.4.3"
 composeActivity = "1.6.0"
 composeMaterial = "1.1.1"
+timber = "5.0.1"
 detekt = '1.22.0'
 ktlint = "0.48.0"
 ktlintGradlePlugin = "11.3.1"
@@ -19,6 +20,7 @@ androidx-compose-foundation = { group = "androidx.compose.foundation", name = "f
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "composeMaterial" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
 detekt-cli = { group = "io.gitlab.arturbosch.detekt", name = "detekt-cli", version.ref = "detekt" }
 ktlint = { group = "com.pinterest", name = "ktlint", version.ref = "ktlint" }
 
