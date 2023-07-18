@@ -5,6 +5,7 @@ targetSdk = "33"
 androidGradlePlugin = "8.0.2"
 kotlin = "1.8.22"
 androidxAppCompat = "1.6.1"
+splash = "1.0.0"
 compose = "1.4.3"
 composeActivity = "1.6.0"
 composeMaterial = "1.1.1"
@@ -15,6 +16,7 @@ ktlintGradlePlugin = "11.3.1"
 
 [libraries]
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splash" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
 androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }

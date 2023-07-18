@@ -1,4 +1,10 @@
 <resources>
   <!-- Base application theme. -->
-  <style name="Theme.GitHubApp" parent="@style/Theme.AppCompat"/>
+  <style name="Theme.GitHubApp" parent="@style/Theme.AppCompat.NoActionBar" />
+
+  <style name="Theme.GitHubApp.Splash" parent="Theme.SplashScreen">
+    <item name="windowSplashScreenBackground">@color/default_background</item>
+    <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_screen_logo</item>
+    <item name="postSplashScreenTheme">@style/Theme.GitHubApp</item>
+  </style>
 </resources>
