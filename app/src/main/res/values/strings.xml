@@ -1,3 +1,10 @@
 <resources>
   <string name="app_name">GitHubApp</string>
+  <string name="default_content_description" />
+
+  // Login screen
+  <string name="login_screen_login_hint">Password</string>
+  <string name="login_screen_username_hint">Username</string>
+  <string name="login_screen_login_button">Login</string>
+  <string name="login_screen_continue_as_guest_button">Continue as guest</string>
 </resources>
