@@ -1,6 +1,8 @@
 plugins {
   alias libs.plugins.android.application
   alias libs.plugins.kotlin.android
+  alias libs.plugins.hilt
+  alias libs.plugins.kapt
 }
 
 android {
@@ -45,5 +47,8 @@ dependencies {
   implementation libs.androidx.compose.foundation
   implementation libs.androidx.compose.material3
   debugImplementation libs.androidx.compose.ui.tooling
+  implementation libs.hilt.android
+  kapt libs.hilt.compiler
+  implementation libs.hilt.navigation.compose
   implementation libs.timber
 }
