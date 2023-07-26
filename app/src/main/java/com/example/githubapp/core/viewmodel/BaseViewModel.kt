@@ -1,8 +1,11 @@
 package com.example.githubapp.core.viewmodel
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 
-abstract class BaseViewModel<E> : ViewModel() {
+abstract class BaseViewModel<E>(
+    application: Application,
+) : AndroidViewModel(application) {
 
     abstract fun onEvent(event: E)
 }

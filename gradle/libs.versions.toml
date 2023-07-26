@@ -11,9 +11,11 @@ composeActivity = "1.6.0"
 composeNaviagation = "2.5.3"
 composeMaterial = "1.1.1"
 arrow = "1.2.0-RC"
+arrow-jackon = "0.14.1"
 googleServices = "4.3.15"
 firebase = "22.1.0"
 okHttp = "4.11.0"
+retrofit = "2.9.0"
 hilt = "2.46.1"
 hilt-navigation-compose = "1.0.0"
 timber = "5.0.1"
@@ -34,6 +36,8 @@ arrow-core = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow"
 firebase-auth = {group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebase"}
 okhttp-client = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
 okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
+retrofit-client = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
+retrofit-jackson = {group = "com.squareup.retrofit2", name = "converter-jackson", version.ref = "retrofit"}
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }

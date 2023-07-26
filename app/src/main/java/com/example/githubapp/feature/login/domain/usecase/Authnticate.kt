@@ -5,8 +5,5 @@ import com.example.githubapp.core.result.Failure
 
 interface Authenticate {
 
-    suspend operator fun invoke(
-        username: String,
-        password: String,
-    ): Either<Failure, Boolean>
+    suspend operator fun invoke(code: String): Either<Failure, Boolean>
 }

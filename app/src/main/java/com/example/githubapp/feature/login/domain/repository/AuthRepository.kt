@@ -5,8 +5,7 @@ import com.example.githubapp.core.result.Failure
 
 interface AuthRepository {
 
-    fun login(
-        username: String,
-        password: String,
+    fun getToken(
+        code: String,
     ): Either<Failure, Boolean>
 }

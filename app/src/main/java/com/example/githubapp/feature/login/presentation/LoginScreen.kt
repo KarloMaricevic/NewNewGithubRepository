@@ -26,15 +26,21 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.githubapp.R
 import com.example.githubapp.core.components.PrimaryButton
 import com.example.githubapp.core.components.TertiaryButton
+import com.example.githubapp.feature.login.presentation.model.LoginEvent.OnInit
 import com.example.githubapp.feature.login.presentation.model.LoginEvent.OnLoginClicked
 import com.example.githubapp.feature.login.presentation.model.LoginEvent.OnPasswordInputChanged
 import com.example.githubapp.feature.login.presentation.model.LoginEvent.OnUsernameInputChanged
 import com.example.githubapp.feature.login.presentation.viewmodel.LoginViewModel
+import timber.log.Timber
+import timber.log.Timber.Forest
 
 @Composable
 fun LoginScreen(
     viewModel: LoginViewModel = hiltViewModel(),
+    redirectUrl: String? = null,
 ) {
+    viewModel.onEvent(OnInit(redirectUrl))
+
     val viewState by viewModel.viewState.collectAsState()
 
     Column(

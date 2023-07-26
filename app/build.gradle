@@ -47,14 +47,19 @@ dependencies {
   implementation libs.androidx.activity.compose
   implementation libs.androidx.compose.foundation
   implementation libs.androidx.compose.material3
+  implementation 'androidx.preference:preference-ktx:1.2.0'
   debugImplementation libs.androidx.compose.ui.tooling
   implementation libs.androidx.navigation.compose
   implementation libs.arrow.core
+  implementation libs.retrofit.jackson
   implementation libs.firebase.auth
   implementation libs.okhttp.client
   implementation libs.okhttp.interceptor
+  implementation libs.retrofit.client
   implementation libs.hilt.android
   kapt libs.hilt.compiler
   implementation libs.hilt.navigation.compose
   implementation libs.timber
+  implementation("io.arrow-kt:arrow-fx-coroutines:1.2.0")
+  implementation group: 'io.arrow-kt', name: 'arrow-core-retrofit', version: '0.13.2'
 }
